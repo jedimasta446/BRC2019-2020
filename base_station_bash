@@ -1,0 +1,21 @@
+#To create wireless link between base station,
+#add these lines of code to the bash files of the
+#Base Station computer and the Rover Computer respectively
+
+
+#Add these to Base Station bash file, replacing the things in
+#quotes with IP addresses
+
+export ROS_IP=”Base Station IP”
+export ROS_HOSTNAME=”Base Station IP”
+export ROS_MASTER_URI=http://”Rover IP”:11311
+
+
+#Add these to Rover bash file, replacing the things in
+#quotes with IP addresses
+
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_HOSTNAME=”Rover IP”
+export ROS_IP=”Rover IP”
+
+#order of these lines in the bash file does not matter
